@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E2DAD6;
+}
+
+.header-container {
+    background-color: #6482AD;
+    width: 100vw;
+    color: #E2DAD6;
+    margin-bottom: 50px;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    background: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+
