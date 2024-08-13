@@ -1,0 +1,87 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #E2DAD6;
+}
+
+.header-container {
+  background-color: #6482AD;
+  width: 100vw;
+  color: #E2DAD6;
+  margin-bottom: 50px;
+}
+
+
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+}
+
+/* #entry-list  {
+  background: #f9f9f9;
+  border-bottom: 1px solid black;
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+} */
+
+.date-and-time {
+  background: #f9f9f9;
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+
+}
+
+.bg-level {
+  background: #f9f9f9;
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  text-align: center;
+
+}
+
+.food-entries {
+  background: #f9f9f9;
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+
+}
+
+.average-bg-level-morning {
+  background: #f9f9f9;
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.average-bg-level-evening {
+  background: #f9f9f9;
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.average-text p {
+  font-weight: bold;
+  text-align: start;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 430px) {
+  #entry-list {
+    width: 100%;
+
+    font-size: 10px;
+  }
+
+}
