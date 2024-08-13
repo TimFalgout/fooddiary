@@ -11,12 +11,26 @@
     <!--Header-->
     <div class="header-container">
         <header class="d-flex justify-content-center py-3">
-          <h1 class="title">My Food Journal</h1>
+          <h1 class="title">Michelle's Food Journal</h1>
         </header>
     </div>
 
     <!--Body of App-->
     <div class="container body-container">
+        <form id="date-form">
+            <div class="mb-3">
+              <label for="inputDate" class="form-label lead">Entry Date</label>
+              <input type="date" class="form-control" id="inputDate">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="amCheckbox" value="AM">
+                <label class="form-check-label" for="amCheckbox">AM</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="pmCheckbox" value="PM">
+                <label class="form-check-label" for="pmCheckbox">PM</label>
+              </div>
+            </div>
+        </form>
         <form id="journal-form">
             <div class="mb-3">
               <label for="inputBG" class="form-label lead">Blood Glucose Level Entry</label>
@@ -30,22 +44,47 @@
         </form> 
     </div>
 
-    <!--Saved Entries-->
-    <div class="container container-entries mt-5" id="entries">
-        <h4>Previous Entries:</h4>
-        <ul id="entry-list">
-            <!--Example "date, time | 120 | Salmon with Salad and potatoes |"-->
-        </ul>
+    <!--Average glucose levels-->
+    <div class="container average-container mt-5 ps-3">
+        <h4>Average Blood Glucose Level:</h4>
+        <div class="row">
+        <div class="col col-lg-2 col-md-3 col-3 average-text">
+          <p>Morning</p>
+        </div>
+        <div class="col col-lg-2 col-md-3 col-3 average-text">
+          <p>Night</p>
+        </div>
+      </div>
+      </div>
+      <div class="container average-container ps-3">
+        <div class="row">
+          <div class="col col-lg-2 col-md-3 col-3 average-bg-level-morning">
+            <p id="average-bg-level-p-morning"></p>
+          </div>
+          <div class="col col-lg-2 col-md-3 col-3 average-bg-level-evening">
+            <p id="average-bg-level-p-evening"></p>
+          </div>
+        </div>
     </div>
-
-
-
-
-
-
-
-
-
+  </div>
+    <!--Saved Entries-->
+    <div class="container container-entries mt-5 ps-1" id="entries">
+      <div class="container">
+        <div class="row">
+          <div class="col col-6 col-lg-2">
+        <h4>Previous Entries:</h4>
+      </div>
+      <div class="col mb-3 col-6 col-lg-2">
+        <button id="printButton" class="btn btn-primary">Print Entries</button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+        <ul id="entry-list">
+            <!-- Dynamic entries will be appended here -->
+        </ul>
+      </div>
+    </div>
 
 
 
